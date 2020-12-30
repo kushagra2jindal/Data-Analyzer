@@ -2,6 +2,8 @@
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.tag import pos_tag
 
+import re, string
+
 def lemmatize_sentence(tokens):
     lemmatizer = WordNetLemmatizer()
     lemmatized_sentence = []
