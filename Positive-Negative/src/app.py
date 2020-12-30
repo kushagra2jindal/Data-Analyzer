@@ -12,9 +12,14 @@ def classify_comment():
     if 'query_string' in request.args:
         query = request.args['query_string']
         custom_tokens = remove_noise(word_tokenize(query))
-        return classifier.classify(dict([token, True] for token in custom_tokens))
+        result = classifier.classify(dict([token, True] for token in custom_tokens))
+        if(result == 'Positive'):
+            c = 1
+        else:
+            c = 0
+        return jsonify([{'result':c}])
     else:
-        return "Error: No query_string field provided. Please specify an query."
+        return jsonify([{"Error" : "No query_string field provided. Please specify an query."}])
 
 
 
