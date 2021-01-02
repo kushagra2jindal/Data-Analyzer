@@ -23,4 +23,4 @@ def classify_comment():
 
 if __name__ == '__main__':
     classifier = createClassifier()
-    app.run()
+    app.run(port=1234)
