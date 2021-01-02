@@ -2,7 +2,6 @@ from nltk.tag import pos_tag
 import pandas as pd 
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
-from nltk import NaiveBayesClassifier
 import random
 from NLPFunctions import remove_noise, get_sentence_for_model
 
@@ -86,26 +85,8 @@ def dataProcessing():
     random.shuffle(dataset)
 
     train_data = dataset[:1300]
-    test_data = dataset[1300:]
+    return (train_data)
 
-
-    ##############################
-    
-    classifier = NaiveBayesClassifier.train(train_data)
-
-    ##############################
-
-    #choice = 'y'
-
-    '''while (choice == 'y'):
-        custom_tweet = input("Enter your comment : ") 
-        custom_tokens = remove_noise(word_tokenize(custom_tweet))
-        print(classifier.classify(dict([token, True] for token in custom_tokens)))
-        choice = input("press y to continue n to exit ")'''
-
-    #print(Tokens_for_model)
-
-    return classifier
 
 
 dataProcessing()
