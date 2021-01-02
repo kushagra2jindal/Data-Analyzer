@@ -7,12 +7,12 @@ from NLPFunctions import remove_noise
 def createClassifier():
     processedData = dataProcessing()
     classifier = NaiveBayesClassifier.train(processedData)
-    #return classifier
+    return classifier
 
 
-    '''
+'''
     random model testing!!!!!!!!!!!!
-    '''
+   
 
     choice = 'y'
 
@@ -23,3 +23,4 @@ def createClassifier():
         choice = input("press y to continue n to exit ")
 
 createClassifier()
+'''
