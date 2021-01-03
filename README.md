@@ -10,6 +10,7 @@ This is a Naive Bayes classifier trained from a labeled data of some positive an
 This is Naive Bayes classifier trained from a labeled data of six different categories, These include Happy, Sad, Angry, Disgust, Fear, Shame and Surprise. The classifier, classifies any request that it process into these six categories. 
 
 
-#Ports
+# Ports
 Positive Negative classifier - 1234
+
 Emotional Clasifer - 1235
