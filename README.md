@@ -6,6 +6,10 @@ This projects include different machine learning models which can be applied to 
 This is a Naive Bayes classifier trained from a labeled data of some positive and negative tweets, that are available in nltk corpus. So, this classifies any comment as positive or negative.
 
 
-# Toxic-Classifer
+# Emotional-Classifer (toxic-classifier)
 This is Naive Bayes classifier trained from a labeled data of six different categories, These include Happy, Sad, Angry, Disgust, Fear, Shame and Surprise. The classifier, classifies any request that it process into these six categories. 
 
+
+#Ports
+Positive Negative classifier - 1234
+Emotional Clasifer - 1235
